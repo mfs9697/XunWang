@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: XunWang.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: unsrt.bst
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Database file #1: XunWangBib.bib
+You've used 52 entries,
+            1791 wiz_defined-function locations,
+            788 strings with 13702 characters,
+and the built_in function-call counts, 12691 in all, are:
+= -- 1025
+> -- 748
+< -- 0
++ -- 267
+- -- 215
+* -- 991
+:= -- 2181
+add.period$ -- 156
+call.type$ -- 52
+change.case$ -- 52
+chr.to.int$ -- 0
+cite$ -- 52
+duplicate$ -- 468
+empty$ -- 1155
+format.name$ -- 215
+if$ -- 2699
+int.to.chr$ -- 0
+int.to.str$ -- 52
+missing$ -- 52
+newline$ -- 263
+num.names$ -- 52
+pop$ -- 52
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 158
+stack$ -- 0
+substring$ -- 994
+swap$ -- 52
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 111
+width$ -- 54
+write$ -- 574

@@ -1,0 +1,185 @@
+% arara: pdflatex
+% arara: bibtex
+% arara: pdflatex
+% arara: pdflatex
+
+
+
+\documentclass[12pt,a4paper]{article}
+
+% ------------------------------------------------------------
+% Encoding, fonts, and typography
+% ------------------------------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{newtxtext,newtxmath}
+\usepackage{microtype}
+
+% ------------------------------------------------------------
+% Page layout
+% ------------------------------------------------------------
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage{indentfirst}
+\setlength{\parindent}{1.25em}
+\setlength{\parskip}{0pt}
+
+% ------------------------------------------------------------
+% Mathematics
+% ------------------------------------------------------------
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{array}
+
+\numberwithin{equation}{section}
+
+% Useful shortcuts
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\ee}{\mathrm{e}}
+\newcommand{\ii}{\mathrm{i}}
+
+% ------------------------------------------------------------
+% Units and numbers
+% ------------------------------------------------------------
+\usepackage{siunitx}
+\sisetup{
+	detect-all,
+	separate-uncertainty = true,
+	range-phrase = --,
+	range-units = single,
+	per-mode = symbol
+}
+
+% ------------------------------------------------------------
+% Figures and tables
+% ------------------------------------------------------------
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{caption}
+
+\captionsetup{
+	font=small,
+	labelfont=bf,
+	labelsep=period
+}
+
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{tabularx}
+\usepackage{longtable}
+
+% ------------------------------------------------------------
+% Lists
+% ------------------------------------------------------------
+\usepackage{enumitem}
+\setlist{
+	itemsep=0pt,
+	topsep=3pt
+}
+
+% ------------------------------------------------------------
+% Citations and bibliography
+% ------------------------------------------------------------
+\usepackage{cite}
+
+
+% ------------------------------------------------------------
+% Hyperlinks and cross-references
+% ------------------------------------------------------------
+\usepackage[hidelinks]{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+% Preferred reference commands:
+% \cref{fig:design-process}
+% \cref{tab:dimensions}
+% \cref{eq:relative-density-bcc}
+
+% ------------------------------------------------------------
+% Section formatting
+% ------------------------------------------------------------
+\usepackage{titlesec}
+
+\titleformat{\section}
+{\normalfont\bfseries\large}
+{\thesection}
+{0.6em}
+{}
+
+\titleformat{\subsection}
+{\normalfont\bfseries}
+{\thesubsection}
+{0.6em}
+{}
+
+\titleformat{\subsubsection}
+{\normalfont\itshape}
+{\thesubsubsection}
+{0.6em}
+{}
+
+% ------------------------------------------------------------
+% Line numbering, useful during editing
+% ------------------------------------------------------------
+% Uncomment if needed:
+% \usepackage[left]{lineno}
+% \linenumbers
+
+% ------------------------------------------------------------
+% Document metadata
+% ------------------------------------------------------------
+\title{Design and Mechanical Properties of Plant-Stem-Inspired Composite Cylindrical Truss Lattice Structures with High Stiffness and Strength}
+
+\author{
+	Xun Wang$^{a,b}$ and Jian Xiong$^{a,b,*}$\\[0.5em]
+	\small $^{a}$National Key Laboratory of Science and Technology for Advanced Composites in Special Environments,\\
+	\small Center for Composite Materials and Structures, Harbin Institute of Technology, Harbin 150080, PR China\\
+	\small $^{b}$Structural Lightweighting and Composites Laboratory (StruCM Lab),\\
+	\small Center for Composite Materials and Structures, Harbin Institute of Technology, Harbin 150080, PR China\\[0.5em]
+	\small $^{*}$Corresponding author: \href{mailto:jx@hit.edu.cn}{jx@hit.edu.cn}
+}
+
+\date{}
+
+\begin{document}
+	
+	\maketitle
+	
+	\section{Introduction}
+	
+	Lightweight lattice structures are of considerable research significance in fields such as aerospace and rail transportation because of their low weight, high specific strength, high specific stiffness, and design flexibility~\cite{Ref1,Ref2,Ref3,Ref4,Ref5,Ref6,Ref7,Ref8,Ref9,Ref10}. Truss lattice structures are a class of porous materials composed of periodically arranged struts interconnected at nodes. Their design is based on a stretching-dominated deformation mechanism: when subjected to external loads, the constituent struts primarily undergo axial tensile or compressive deformation rather than bending. As a result, high stiffness and strength can be achieved at low relative densities. Accordingly, truss lattice structures have become one of the most extensively investigated types of lattice structures in recent years~\cite{Ref11}.
+	
+	In recent decades, extensive studies have been carried out on the mechanical properties of truss lattice structures with various configurations~\cite{Ref12,Ref13,Ref14,Ref15,Ref16,Ref17,Ref18,Ref19}. Experimental, numerical, and theoretical approaches are commonly employed to investigate the mechanical performance of truss lattice structures under quasi-static and dynamic compression~\cite{Ref20,Ref21,Ref22,Ref23,Ref24,Ref25,Ref26,Ref27,Ref28,Ref29}. With regard to quasi-static mechanical properties, Li et al.~\cite{Ref30} enhanced the mechanical performance of lattice structures by introducing a cross-strut strategy and established a prediction model for the maximum compressive strength. Chen et al.~\cite{Ref31} reconstructed simple cubic, face-centered cubic (FCC), and body-centered cubic (BCC) lattices into self-similar nested configurations and clarified the effect of the nesting ratio on compressive response and energy absorption performance. Han et al.~\cite{Ref32} verified that BCC-derived lattice structures exhibit superior load-bearing capacity and energy absorption characteristics compared with the original BCC structure. Kothari et al.~\cite{Ref33} adopted a design combining I-shaped struts and node reinforcement, which significantly improved the specific stiffness, specific yield strength, and energy absorption capacity of the lattice. The curved BCC structure proposed by Sasagawa et al.~\cite{Ref34} exhibits much greater flexibility and a wider tunable range of mechanical properties than conventional BCC and octet-truss lattices at the same relative density. For BCC lattice structures under compression at large strains, Chen et al.~\cite{Ref35} derived correlations between the strut slenderness ratio and key mechanical properties, including Young's modulus and yield strength. They also conducted a systematic finite element study of the equivalent mechanical properties of BCC lattice structures under compression. The novel hollow octet-truss lattice structure developed by Zhang et al.~\cite{Ref36} addresses the instability of conventional stretching-dominated lattices at low relative densities, and its remarkable energy absorption performance has been validated through experiments and numerical simulations. Disayanan et al.~\cite{Ref37} improved the energy absorption and failure characteristics of additively manufactured lattice structures using hollow and curved design strategies. The vertex-modified BCC lattice structure proposed by Wang et al.~\cite{Ref38} outperforms conventional truss lattice structures in deformation stability, energy absorption capacity, and strength.
+	
+	Research on dynamic mechanical properties mainly focuses on the energy absorption characteristics of lightweight lattice structures under impact loading, thereby providing valuable guidance for the design of lightweight impact-resistant lattices. The vertex-offset FCC lattice structure proposed by Wang et al.~\cite{Ref39} exhibits enhanced energy absorption capacity, a stable stress--strain response under axial impact, and excellent local deformation resistance under oblique impact, enabling efficient load transfer. This bio-inspired design strategy provides a new approach for optimizing multidirectional mechanical properties. Tancogne-Dejean et al.~\cite{Ref40} analyzed the uniaxial quasi-static compression and dynamic impact properties of octet-truss lattice structures using a combined experimental and numerical approach and revealed the effect of loading rate on their mechanical performance. Sun et al.~\cite{Ref41} obtained the dynamic and quasi-static compression response curves of octahedral, rhombic dodecahedral, and novel hybrid lattice structures using drop-weight tests and universal compression testing, respectively, and clarified the effect of deformation rate on the stress--strain response and energy absorption performance of these structures. Chen et al.~\cite{Ref42} analyzed the effects of Kelvin and auxetic lattice structures on cushioning behavior and load distribution through impact experiments and finite element simulations. Zimmerman et al.~\cite{Ref43} investigated the yield characteristics of octet-truss lattice structures under impact loading and discussed the influence of face-sheet thickness on the load attenuation mechanism, providing references for structural parameter optimization under impact conditions. For cylindrical truss lattice structures, however, current research mainly focuses on their mechanical properties under quasi-static compression, whereas their energy absorption characteristics under dynamic impact loading remain insufficiently studied.
+	
+	Regarding cylindrical lattice structures, Gao et al.~\cite{Ref44} validated a theoretical model for a novel cylindrical double-arrow honeycomb structure with negative Poisson's ratio through numerical simulations and experiments. Zhang et al.~\cite{Ref45} investigated the peak stress, energy absorption performance, and load efficiency of hollow cylindrical and cubic lattice structures by adjusting the twist angle. Tian et al.~\cite{Ref46} developed a bio-inspired dual-phase cylindrical lattice that achieves higher specific energy absorption than the corresponding single-phase structure. Pan et al.~\cite{Ref47} proposed a reinforced cylindrical negative-stiffness structure with internally filled inclined beams and analyzed its static and dynamic mechanical properties. Li et al.~\cite{Ref48} constructed a cylindrical lattice using rhombic dodecahedron unit cells and obtained its force--displacement response and energy absorption characteristics through impact tests. Sood et al.~\cite{Ref49} analyzed the mechanical properties and energy absorption features of cylindrical lattice structures through static and dynamic tests combined with numerical simulations.
+	%
+	% TODO: The original manuscript cites Gong et al. as Ref50 here, but Ref50 in the corrected
+	% bibliography is Mars et al. on low-velocity impact of glass-fiber-reinforced polyamide.
+	% Insert the correct Gong et al. reference in XunWangBib.bib and cite it as RefGong, or
+	% replace RefGong with the proper existing reference key.
+	%
+	Gong et al.~\cite{RefGong} integrated three types of concave cylindrical lattice structures with distinct Poisson's ratio properties with triply periodic minimal surfaces and characterized their mechanical properties through quasi-static compression tests. Their results demonstrated that the hybrid design remarkably improves energy absorption performance. For cylindrical truss lattice structures, existing studies mainly focus on finite element analysis and experimental investigations, whereas systematic theoretical models remain relatively limited.
+	
+	Based on the above literature review, existing studies on lightweight lattice structures have predominantly focused on regular cubic configurations, which have attracted widespread research interest owing to their high geometric symmetry and superior lightweight performance. However, regular cubic truss lattice structures are not sufficient to meet the impact resistance and energy absorption requirements of cylindrical curved components in aerospace applications under practical service conditions. Therefore, notable research gaps remain in the field of composite cylindrical truss lattice structures. In particular, the theoretical models and impact resistance characteristics of cylindrical truss lattice structures under low-density conditions have not been thoroughly investigated. Systematic research on the load-bearing mechanisms and deformation behavior of composite cylindrical truss lattice structures can therefore provide a theoretical foundation for lightweight design in the aerospace sector.
+	
+	The key issues to be addressed include realizing the design evolution of truss lattice configurations from regular cubic forms to cylindrical curved surfaces and constructing theoretical models for the compressive strength and stiffness of cylindrical truss lattice structures at low relative densities. To address these research gaps, this study investigates low-density composite cylindrical lattice structures inspired by plant stems. The relative densities of various cylindrical truss lattice structures are calculated, and theoretical models for their compressive modulus and compressive strength are established based on their geometric characteristics. Finite element models of the composite cylindrical truss lattice structures are then developed to study their mechanical response under quasi-static compression and impact loading. Subsequently, quasi-static compression and impact tests are carried out to obtain the load--displacement curves of the structures. Finally, the theoretical predictions, numerical simulation results, and experimental data are compared. The mechanical properties and deformation mechanisms of the structures under low-density conditions are revealed, the effects of relative density on the mechanical performance of cylindrical truss lattice structures are clarified, and the validity of the proposed theoretical models is verified.
+		
+	
+
+	% ------------------------------------------------------------
+	% Bibliography
+	% ------------------------------------------------------------
+	% Use this line only if you want to print all entries from XunWangBib.bib,
+	% including entries not cited in the text:
+	% \nocite{*}
+	
+	\bibliographystyle{unsrt}
+	\bibliography{XunWangBib}
+	
+\end{document}
