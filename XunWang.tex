@@ -36,11 +36,6 @@
 
 %\numberwithin{equation}{section}
 
-% Useful shortcuts
-\newcommand{\dd}{\mathrm{d}}
-\newcommand{\ee}{\mathrm{e}}
-\newcommand{\ii}{\mathrm{i}}
-
 % ------------------------------------------------------------
 % Units and numbers
 % ------------------------------------------------------------
@@ -88,16 +83,32 @@
 \usepackage{cite}
 
 
+% Hyperlinks and highlighted references
 % ------------------------------------------------------------
-% Hyperlinks and cross-references
-% ------------------------------------------------------------
-\usepackage[hidelinks]{hyperref}
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage[
+colorlinks=true,
+linkcolor=RoyalBlue,   % equations, figures, tables, sections
+citecolor=BrickRed,    % citations
+urlcolor=ForestGreen,  % URLs
+filecolor=RoyalBlue
+]{hyperref}
+
 \usepackage[nameinlink,noabbrev]{cleveref}
 
-% Preferred reference commands:
-% \cref{fig:design-process}
-% \cref{tab:dimensions}
-% \cref{eq:relative-density-bcc}
+% Names used by cleveref
+\crefname{figure}{Figure}{Figures}
+\Crefname{figure}{Figure}{Figures}
+
+\crefname{table}{Table}{Tables}
+\Crefname{table}{Table}{Tables}
+
+\crefname{equation}{Eq.}{Eqs.}
+\Crefname{equation}{Eq.}{Eqs.}
+
+\crefname{section}{Section}{Sections}
+\Crefname{section}{Section}{Sections}
 
 % ------------------------------------------------------------
 % Section formatting
@@ -149,6 +160,21 @@
 	
 	\maketitle
 	
+	\section*{Highlights}
+	
+	\begin{itemize}
+		\item Plant-stem-inspired composite cylindrical truss lattice structures are proposed.
+		\item Theoretical models for compressive modulus and strength are established and validated by experiments and finite element simulations.
+		\item The stiffness, strength, and impact energy absorption characteristics of low-density cylindrical truss lattice structures are revealed.
+	\end{itemize}
+	
+	\begin{abstract}
+		Lightweight lattice structures have attracted considerable research attention because of their high geometric symmetry, low density, and superior mechanical efficiency. Inspired by the excellent stiffness characteristics of plant stems, four composite cylindrical truss lattice structures with distinct topological configurations are designed to meet the requirements for load-bearing capacity and impact resistance in curved aerospace components. Theoretical prediction models for the compressive modulus and compressive strength are established based on the energy method. The load-bearing and energy absorption characteristics of the cylindrical truss lattice structures under quasi-static compression and impact loading are analyzed using finite element simulations. Composite cylindrical truss lattice structures are fabricated by selective laser sintering, and quasi-static compression and low-velocity impact experiments are conducted to verify the accuracy of the theoretical models and numerical simulations. The results demonstrate that relative density and topological configuration have significant effects on the stiffness, strength, and impact energy absorption properties of cylindrical truss lattice structures. This work clarifies the load-bearing and energy absorption mechanisms of low-density cylindrical truss lattice structures and provides a theoretical basis for the lightweight design and mechanical-performance optimization of curved aerospace structures.
+	\end{abstract}
+	
+	\noindent\textbf{Keywords:} Lattice structures; Compressive modulus; Compressive strength; Impact energy absorption; Cylindrical truss lattice structures
+		
+	
 	\section{Introduction}
 	
 	Lightweight lattice structures have attracted considerable attention in aerospace, rail transportation, and other engineering fields because of their low weight, high specific strength, high specific stiffness, and high design flexibility~\cite{Ref1,Ref2,Ref3,Ref4,Ref5,Ref6,Ref7,Ref8,Ref9,Ref10}. Among them, truss lattice structures are a typical class of porous materials composed of periodically arranged struts connected at nodes. Their load-bearing capacity is mainly governed by a stretching-dominated deformation mechanism. Under external loading, the constituent struts primarily undergo axial tensile or compressive deformation rather than bending, allowing high stiffness and strength to be achieved at low relative densities. Consequently, truss lattice structures have become one of the most widely investigated types of lightweight lattice structures in recent years~\cite{Ref11}.
@@ -174,7 +200,7 @@
 	
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=0.85\textwidth]{image1}
+		\includegraphics[width=0.65\textwidth]{image1}
 		\caption{Design process from a cubic truss lattice configuration to a cylindrical curved-surface configuration.}
 		\label{fig1}
 	\end{figure}
@@ -185,14 +211,14 @@
 	
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=0.70\textwidth]{image2}
+		\includegraphics[width=0.6\textwidth]{image2}
 		\caption{Cylindrical porous structures in nature.}
 		\label{fig2}
 	\end{figure}
 	
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=0.85\textwidth]{image3}
+		\includegraphics[width=0.75\textwidth]{image3}
 		\caption{Design process and geometric parameters of composite cylindrical truss lattice structures.}
 		\label{fig3}
 	\end{figure}
@@ -659,19 +685,19 @@ Within the considered geometric range, increasing the outer radius generally inc
 	
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics[width=\textwidth]{image8}
+		\includegraphics[width=.9\textwidth]{image8}
 		
 		\vspace{0.4em}
 		
-		\includegraphics[width=\textwidth]{image9}
+		\includegraphics[width=.9\textwidth]{image9}
 		
 		\vspace{0.4em}
 		
-		\includegraphics[width=\textwidth]{image10}
+		\includegraphics[width=.9\textwidth]{image10}
 		
 		\vspace{0.4em}
 		
-		\includegraphics[width=\textwidth]{image11}
+		\includegraphics[width=.9\textwidth]{image11}
 		
 		\caption{Schematic diagram of the force analysis of composite cylindrical truss lattice structures.}
 		\label{fig5}
@@ -756,7 +782,7 @@ Within the considered geometric range, increasing the outer radius generally inc
 		{l_{2,1}^3\bigl(R_2^2-r_2^2\bigr)}
 		+\frac{8d_2^2l_2^3}
 		{l_{2,2}^3\bigl(R_2^2-r_2^2\bigr)}
-		\Bigg]E_s .
+		\Bigg]E_s ,
 		\label{Eq19}
 	\end{multline}
 	%
@@ -805,7 +831,7 @@ Within the considered geometric range, increasing the outer radius generally inc
 			{16\kappa_{3,1}^5\bigl(R_3^2-r_3^2\bigr)}
 			+\frac{27d_3^6l_3^3}
 			{1024\kappa_{3,1}^7\bigl(R_3^2-r_3^2\bigr)}
-			\Bigg]E_s .
+			\Bigg]E_s ,
 		\end{aligned}
 		\label{Eq20}
 	\end{equation}
@@ -895,7 +921,7 @@ Within the considered geometric range, increasing the outer radius generally inc
 		{16384l_{4,1}^7\bigl(R_4^2-r_4^2\bigr)}
 		+\frac{27d_4^6l_4^3}
 		{16384l_{4,2}^7\bigl(R_4^2-r_4^2\bigr)}
-		\Bigg]E_s .
+		\Bigg]E_s ,
 		\label{Eq21}
 	\end{multline}
 	%
@@ -1024,7 +1050,7 @@ Within the considered geometric range, increasing the outer radius generally inc
 				\bigl(d_1l_1+16\kappa_{1,2}l_{1,2}\bigr)
 			}
 			\sigma_{c1}^{\mathrm{pk}}
-			\Bigg].
+			\Bigg],
 		\label{Eq26}
 	\end{equation}
 	%
@@ -1415,7 +1441,7 @@ During the tests, each lattice specimen was placed between the upper and lower r
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.85\textwidth]{image21}
+	\includegraphics[width=0.75\textwidth]{image21}
 	\caption{Schematic diagram of composite cylindrical truss lattice structures under quasi-static compression tests.}
 	\label{fig11}
 \end{figure}
@@ -1426,7 +1452,7 @@ Drop-weight impact tests were conducted on the composite cylindrical truss latti
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.70\textwidth]{image22}
+	\includegraphics[width=0.60\textwidth]{image22}
 	\caption{Schematic diagram of the impact experimental setup for composite cylindrical truss lattice structures.}
 	\label{fig12}
 \end{figure}
