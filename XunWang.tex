@@ -1344,11 +1344,11 @@ The contact properties and mesh generation used in the impact simulations were i
 
 \section{Experimental Methods for Composite Cylindrical Truss Lattice Structures}
 
-Dog-bone specimens and composite cylindrical truss lattice structures with various configurations were fabricated by 3D printing using PA6 nylon reinforced with short glass fibers. Tensile tests were conducted on standard dog-bone specimens to establish the constitutive relation of the base material, which was then used in the numerical simulations. Quasi-static compression and low-velocity impact tests were performed to validate the simulation results and obtain experimental data for different composite cylindrical truss lattice structures.
+Dog-bone specimens and composite cylindrical truss lattice structures with different configurations were fabricated by 3D printing using short-glass-fiber-reinforced PA6 nylon. Tensile and compressive tests were conducted on standard specimens to determine the constitutive properties of the base material, which were then used in the numerical simulations. Quasi-static compression and low-velocity impact tests were performed on the composite cylindrical truss lattice structures to validate the simulation results and obtain experimental data for different structural configurations.
 
 \subsection{Fabrication of Composite Cylindrical Truss Lattice Structures}
 
-The composite cylindrical truss lattice structures were fabricated from short-glass-fiber-reinforced PA6 nylon by selective laser sintering, with a laser power of \SI{200}{W}. After manufacturing, all specimens were sandblasted for \SI{20}{min} to remove residual PA6 nylon powder. The composite cylindrical truss lattice structures with different configurations are shown in Figure~\ref{fig8}. Four structural configurations were investigated in this study, and each structure consisted of six layers. The geometric dimensions corresponding to different relative densities are listed in Table~\ref{tab1}. The maximum dimensional error between the designed values and the measured specimens was less than 0.4\%.
+The composite cylindrical truss lattice structures were fabricated from short-glass-fiber-reinforced PA6 nylon by selective laser sintering, with a laser power of \SI{200}{W}. After manufacturing, all specimens were sandblasted for \SI{20}{min} to remove residual PA6 nylon powder. The fabricated composite cylindrical truss lattice structures with different configurations are shown in Figure~\ref{fig8}. Four structural configurations were investigated in this study, and each structure consisted of six layers. The geometric dimensions corresponding to different relative densities are listed in Table~\ref{tab1}. The maximum dimensional error between the designed values and the measured specimens was less than 0.4\%.
 
 \begin{figure}[htbp]
 	\centering
@@ -1366,11 +1366,13 @@ The composite cylindrical truss lattice structures were fabricated from short-gl
 	\label{fig9}
 \end{figure}
 
-Figure~\ref{fig9} shows the microstructure of the short-glass-fiber-reinforced PA6 nylon composite. The glass fibers exhibit slender filament-like shapes with a uniform diameter distribution and are well dispersed within the PA6 nylon matrix. Tight interfacial bonding between the glass fibers and the PA6 nylon matrix is also observed, with no obvious gaps or debonding. This indicates that load can be effectively transferred between the two phases.
+Figure~\ref{fig9} shows the microstructure of the short-glass-fiber-reinforced PA6 nylon composite. The glass fibers exhibit slender filament-like shapes with a uniform diameter distribution and are well dispersed within the PA6 nylon matrix. Tight interfacial bonding between the glass fibers and the PA6 nylon matrix is also observed, with no obvious gaps or debonding. This microstructural feature indicates that load can be effectively transferred between the two phases.
 
 \subsection{Characterization of the Base Material}
 
-To characterize the mechanical properties of the short-glass-fiber-reinforced PA6 nylon, standard specimens were fabricated using the same printing method as that adopted for the lattice specimens, with a printing direction of $90^\circ$. The tensile and compressive properties of the base material were tested in accordance with ASTM D638-14 and ASTM D695-15, respectively. The density and Poisson's ratio of the composite were \SI{1.15}{g/cm^3} and 0.3, respectively. Tensile and compressive tests were carried out on the printed standard specimens using an INSTRON 5569 universal testing machine with a maximum load capacity of \SI{50}{kN} at a nominal strain rate of \SI{1e-3}{s^{-1}}. The true stress--strain curves of the tensile and compressive specimens are plotted in Figure~\ref{fig10}, and the relevant parameters are summarized in Table~\ref{tab2}.
+To characterize the mechanical properties of the short-glass-fiber-reinforced PA6 nylon, standard specimens were fabricated using the same printing method as that used for the lattice specimens, with a printing direction of $90^\circ$. The tensile and compressive properties of the base material were tested in accordance with ASTM D638-14 and ASTM D695-15, respectively. The density and Poisson's ratio of the composite were \SI{1.15}{g/cm^3} and 0.3, respectively.
+
+Tensile and compressive tests were carried out on the printed standard specimens using an Instron 5569 universal testing machine with a maximum load capacity of \SI{50}{kN} at a nominal strain rate of \SI{1e-3}{s^{-1}}. The true stress--strain curves of the tensile and compressive specimens are shown in Figure~\ref{fig10}, and the corresponding mechanical parameters are summarized in Table~\ref{tab2}.
 
 \begin{figure}[htbp]
 	\centering
@@ -1407,7 +1409,9 @@ To characterize the mechanical properties of the short-glass-fiber-reinforced PA
 
 \subsection{Quasi-Static Compression Test of Composite Cylindrical Truss Lattice Structures}
 
-To investigate the mechanical behavior of composite cylindrical truss lattice structures during the quasi-static elastic deformation stage, quasi-static compression tests were performed on four groups of lattice structures with different configurations using an Instron 5569 universal testing machine. The apparatus was equipped with an electronic displacement controller, a load sensor, a camera, a loading platform, and two rigid compression platens. During the tests, each lattice specimen was placed between the upper and lower rigid platens. The upper platen was driven by the displacement controller and moved downward at a constant rate of \SI{1}{mm/min}, while the lower platen remained fixed. As shown in Figure~\ref{fig11}, the testing machine automatically collected and recorded the compression load data throughout the tests, and a camera was used to capture the real-time deformation process of the specimens. Based on the original geometric dimensions of the specimens, the stress and strain values under uniform compression were calculated. The elastic modulus of the composite cylindrical truss lattice structures was determined from the slope of the stress--strain curve in the small-deformation elastic region.
+To investigate the mechanical behavior of the composite cylindrical truss lattice structures during the quasi-static elastic deformation stage, quasi-static compression tests were performed on four groups of lattice structures with different configurations using an Instron 5569 universal testing machine. The testing system was equipped with an electronic displacement controller, a load sensor, a camera, a loading platform, and two rigid compression platens.
+
+During the tests, each lattice specimen was placed between the upper and lower rigid platens. The upper platen was driven by the displacement controller and moved downward at a constant rate of \SI{1}{mm/min}, while the lower platen remained fixed. As shown in Figure~\ref{fig11}, the testing machine automatically collected and recorded the compression load throughout the tests, and a camera was used to capture the real-time deformation process of the specimens. Based on the original geometric dimensions of the specimens, the stress and strain values under uniform compression were calculated. The elastic modulus of the composite cylindrical truss lattice structures was determined from the slope of the stress--strain curve in the small-deformation elastic region.
 
 \begin{figure}[htbp]
 	\centering
@@ -1426,6 +1430,7 @@ Drop-weight impact tests were conducted on the composite cylindrical truss latti
 	\caption{Schematic diagram of the impact experimental setup for composite cylindrical truss lattice structures.}
 	\label{fig12}
 \end{figure}
+
 
 \section{Mechanical Properties of Composite Cylindrical Truss Lattice Structures}
 
