@@ -34,7 +34,7 @@
 \usepackage{bm}
 \usepackage{array}
 
-\numberwithin{equation}{section}
+%\numberwithin{equation}{section}
 
 % Useful shortcuts
 \newcommand{\dd}{\mathrm{d}}
@@ -677,34 +677,34 @@ Within the considered geometric range, increasing the outer radius generally inc
 		\label{fig5}
 	\end{figure}
 	
-	The axial strain energies $U_b^p$ and $U_c^p$ along the inclined struts are expressed as
+	The strain energies associated with the axial components of the inclined struts are expressed as
 	%
 	\begin{equation}
 		\begin{aligned}
-			U_b^p &= \frac{\big(F_b^p\big)^2\kappa_{1,1}}{2A_{10}E_s}, \\
-			U_c^p &= \frac{\left(F_c^p\right)^2\kappa_{1,2}}{2A_{10}E_s}.
+			U_b^p &= \frac{\bigl(F_b^p\bigr)^2\kappa_{1,1}}{2A_{10}E_s}, \\
+			U_c^p &= \frac{\bigl(F_c^p\bigr)^2\kappa_{1,2}}{2A_{10}E_s}.
 		\end{aligned}
 		\label{Eq13}
 	\end{equation}
-	
-	The bending strain energies $U_b^v$ and $U_c^v$ perpendicular to the inclined struts are expressed as
+	%
+	The bending strain energies associated with the components perpendicular to the inclined struts are expressed as
 	%
 	\begin{equation}
 		\begin{aligned}
-			U_b^v &= \frac{\big(F_b^v\big)^2\kappa_{1,1}^3}{6E_sI_1}, \\
-			U_c^v &= \frac{\left(F_c^v\right)^2\kappa_{1,2}^3}{6E_sI_1}.
+			U_b^v &= \frac{\bigl(F_b^v\bigr)^2\kappa_{1,1}^3}{6E_sI_1}, \\
+			U_c^v &= \frac{\bigl(F_c^v\bigr)^2\kappa_{1,2}^3}{6E_sI_1}.
 		\end{aligned}
 		\label{Eq14}
 	\end{equation}
 	
-	The total strain energy $U_1$ of the body-centered cubic cylindrical lattice structure is expressed as
+	The total strain energy $U_1$ of the body-centered cubic cylindrical lattice structure is then obtained by summing the strain energies of all corresponding struts:
 	%
 	\begin{equation}
-		U_1 = 24U_a + 48\left(U_b^p+U_b^v+U_c^p+U_c^v\right).
+		U_1 = 24U_a + 48\bigl(U_b^p+U_b^v+U_c^p+U_c^v\bigr).
 		\label{Eq15}
 	\end{equation}
-	
-	The equivalent strain energy $U_{\mathrm{eq}1}$ of the body-centered cubic cylindrical lattice structure is expressed as
+	%
+	The equivalent strain energy $U_{\mathrm{eq}1}$ of the body-centered cubic cylindrical lattice structure can be written as
 	%
 	\begin{equation}
 		U_{\mathrm{eq}1}
@@ -712,8 +712,8 @@ Within the considered geometric range, increasing the outer radius generally inc
 		= \frac{\delta_1^2E_1^*A_{10}}{2l_1}.
 		\label{Eq16}
 	\end{equation}
-	
-	Based on the energy method, the total strain energy $U_1$ of the body-centered cubic cylindrical lattice structure is equal to its equivalent strain energy $U_{\mathrm{eq}1}$, namely
+	%
+	According to the energy equivalence principle, the total strain energy $U_1$ is equal to the equivalent strain energy $U_{\mathrm{eq}1}$:
 	%
 	\begin{equation}
 		U_1 = U_{\mathrm{eq}1}.
@@ -723,40 +723,40 @@ Within the considered geometric range, increasing the outer radius generally inc
 	Substituting Eqs.~\eqref{Eq15} and \eqref{Eq16} into Eq.~\eqref{Eq17}, the compressive modulus $E_1^*$ of the body-centered cubic cylindrical lattice structure is obtained as
 	%
 	\begin{multline}
-					E_1^*
-			= \Bigg[
-			\frac{6d_1^2}{R_1^2-r_1^2}
-			+\frac{9d_1^4l_{1,1}^2l_1}
-			{16\big(R_1^2-r_1^2\big)\kappa_{1,1}^5}
-			+\frac{9d_1^4l_{1,2}^2l_1}
-			{16\big(R_1^2-r_1^2\big)\kappa_{1,2}^5} \\
-			+\frac{27d_1^6l_1^3}
-			{1024\big(R_1^2-r_1^2\big)\kappa_{1,1}^7}
-			+\frac{27d_1^6l_1^3}
-			{1024\big(R_1^2-r_1^2\big)\kappa_{1,2}^7}
-			\Bigg]E_s .
+		E_1^*
+		= \Bigg[
+		\frac{6d_1^2}{R_1^2-r_1^2}
+		+\frac{9d_1^4l_{1,1}^2l_1}
+		{16\bigl(R_1^2-r_1^2\bigr)\kappa_{1,1}^5}
+		+\frac{9d_1^4l_{1,2}^2l_1}
+		{16\bigl(R_1^2-r_1^2\bigr)\kappa_{1,2}^5} \\
+		+\frac{27d_1^6l_1^3}
+		{1024\bigl(R_1^2-r_1^2\bigr)\kappa_{1,1}^7}
+		+\frac{27d_1^6l_1^3}
+		{1024\bigl(R_1^2-r_1^2\bigr)\kappa_{1,2}^7}
+		\Bigg]E_s .
 		\label{Eq18}
 	\end{multline}
 	
-	As shown in Figure~\ref{fig5}(b), following the same procedure as that used for the body-centered cubic cylindrical lattice structure, the compressive modulus $E_2^*$ of the face-centered cubic cylindrical lattice structure is obtained as
+	As shown in Figure~\ref{fig5}(b), the same derivation procedure can be applied to the face-centered cubic cylindrical lattice structure. Its compressive modulus $E_2^*$ is obtained as
 	%
 	\begin{multline}
-			E_2^*
-			= \Bigg[
-			\frac{6d_2^2}{R_2^2-r_2^2}
-			+\frac{9d_2^4\big(R_2-r_2\big)^2l_2}
-			{2l_{2,4}^5\big(R_2^2-r_2^2\big)}
-			+\frac{27d_2^6l_2^3}
-			{8l_{2,4}^7\big(R_2^2-r_2^2\big)} \\
-			+\frac{18d_2^4\kappa_{2,1}^2l_2}
-			{l_{2,1}^5\big(R_2^2-r_2^2\big)}
-			+\frac{18d_2^4\kappa_{2,2}^2l_2}
-			{l_{2,2}^5\big(R_2^2-r_2^2\big)} 
-			+\frac{6d_2^2l_2^3}
-			{l_{2,1}^3\big(R_2^2-r_2^2\big)}
-			+\frac{8d_2^2l_2^3}
-			{l_{2,2}^3\big(R_2^2-r_2^2\big)}
-			\Bigg]E_s .
+		E_2^*
+		= \Bigg[
+		\frac{6d_2^2}{R_2^2-r_2^2}
+		+\frac{9d_2^4\bigl(R_2-r_2\bigr)^2l_2}
+		{2l_{2,4}^5\bigl(R_2^2-r_2^2\bigr)}
+		+\frac{27d_2^6l_2^3}
+		{8l_{2,4}^7\bigl(R_2^2-r_2^2\bigr)} \\
+		+\frac{18d_2^4\kappa_{2,1}^2l_2}
+		{l_{2,1}^5\bigl(R_2^2-r_2^2\bigr)}
+		+\frac{18d_2^4\kappa_{2,2}^2l_2}
+		{l_{2,2}^5\bigl(R_2^2-r_2^2\bigr)}
+		+\frac{6d_2^2l_2^3}
+		{l_{2,1}^3\bigl(R_2^2-r_2^2\bigr)}
+		+\frac{8d_2^2l_2^3}
+		{l_{2,2}^3\bigl(R_2^2-r_2^2\bigr)}
+		\Bigg]E_s .
 		\label{Eq19}
 	\end{multline}
 	%
@@ -772,7 +772,7 @@ Within the considered geometric range, increasing the outer radius generally inc
 	\frac{\sqrt{6}-\sqrt{2}}{4}R_2 .
 	\]
 	
-	As shown in Figure~\ref{fig5}(c), the corresponding compressive modulus $E_3^*$ of the octahedral cylindrical lattice structure is expressed as
+	As shown in Figure~\ref{fig5}(c), the compressive modulus $E_3^*$ of the octahedral cylindrical lattice structure is expressed as
 	%
 	\begin{equation}
 		\begin{aligned}
@@ -785,21 +785,21 @@ Within the considered geometric range, increasing the outer radius generally inc
 			+\frac{9d_3^4\kappa_{4,1}^2l_3}
 			{16l_{3,1}^5\bigl(R_3^2-r_3^2\bigr)}
 			\\
-			&\qquad+\frac{9d_3^4\kappa_{4,2}^2l_3}
+			&+\frac{9d_3^4\kappa_{4,2}^2l_3}
 			{16l_{3,2}^5\bigl(R_3^2-r_3^2\bigr)}
 			+\frac{3d_3^2l_3^3}
 			{4l_{3,1}^3\bigl(R_3^2-r_3^2\bigr)}
 			+\frac{3d_3^2l_3^3}
 			{4l_{3,2}^3\bigl(R_3^2-r_3^2\bigr)}
 			\\
-			&\qquad+\frac{3d_3^2l_3^3}
+			&+\frac{3d_3^2l_3^3}
 			{8\kappa_{5,1}^3\bigl(R_3^2-r_3^2\bigr)}
 			+\frac{3d_3^2l_3^3}
 			{8\kappa_{5,2}^3\bigl(R_3^2-r_3^2\bigr)}
 			+\frac{9d_3^4\kappa_{6,1}^2l_3}
 			{32\kappa_{5,1}^5\bigl(R_3^2-r_3^2\bigr)}
 			\\
-			&\qquad+\frac{9d_3^4\kappa_{6,2}^2l_3}
+			&+\frac{9d_3^4\kappa_{6,2}^2l_3}
 			{32\kappa_{5,2}^5\bigl(R_3^2-r_3^2\bigr)}
 			+\frac{9d_3^4\kappa_{3,2}^2l_3}
 			{16\kappa_{3,1}^5\bigl(R_3^2-r_3^2\bigr)}
@@ -834,14 +834,14 @@ Within the considered geometric range, increasing the outer radius generally inc
 		\frac{\sqrt{6}-\sqrt{2}}{4}r_3, \\[0.5em]
 		\kappa_{3,2}
 		&=
-		\frac{1}{2\left(R_3+r_3\right)}
-		\left(
+		\frac{1}{2\bigl(R_3+r_3\bigr)}
+		\bigl(
 		R_3^4
 		-2\sqrt{3}R_3^3r_3
 		+6R_3^2r_3^2
 		-2\sqrt{3}R_3r_3^3
 		+r_3^4
-		\right)^{1/2}, \\
+		\bigr)^{1/2}, \\
 		\kappa_{4,2}
 		&=
 		\frac{\sqrt{6}-\sqrt{2}}{4}R_3, \\[0.5em]
@@ -863,12 +863,12 @@ Within the considered geometric range, increasing the outer radius generally inc
 		\right]^{1/2}, \\[0.5em]
 		\kappa_{6,1}
 		&=
-		\frac{\big(\sqrt{6}+\sqrt{2}\big)\left(R_3-r_3\right)}
-		{4\big(R_3+r_3\big)}r_3, \\
+		\frac{\bigl(\sqrt{6}+\sqrt{2}\bigr)\bigl(R_3-r_3\bigr)}
+		{4\bigl(R_3+r_3\bigr)}r_3, \\
 		\kappa_{6,2}
 		&=
-		\frac{\big(\sqrt{6}+\sqrt{2}\big)\left(R_3-r_3\right)}
-		{4\left(R_3+r_3\right)}R_3 .
+		\frac{\bigl(\sqrt{6}+\sqrt{2}\bigr)\bigl(R_3-r_3\bigr)}
+		{4\bigl(R_3+r_3\bigr)}R_3 .
 	\end{aligned}
 	\]
 	%
@@ -878,7 +878,7 @@ Within the considered geometric range, increasing the outer radius generally inc
 	
 	As shown in Figure~\ref{fig5}(d), the compressive modulus $E_4^*$ of the tesseract cylindrical lattice structure is expressed as
 	%
-\begin{multline}
+	\begin{multline}
 		E_4^*
 		= \Bigg[
 		\frac{6d_4^2}{R_4^2-r_4^2}
@@ -896,8 +896,8 @@ Within the considered geometric range, increasing the outer radius generally inc
 		+\frac{27d_4^6l_4^3}
 		{16384l_{4,2}^7\bigl(R_4^2-r_4^2\bigr)}
 		\Bigg]E_s .
-	\label{Eq21}
-\end{multline}
+		\label{Eq21}
+	\end{multline}
 	%
 	where the lengths $\kappa_{7,1}$ and $\kappa_{7,2}$ of the inclined struts $A_4D_4$ and $E_4F_4$ in Eq.~\eqref{Eq21} are expressed as
 	%
@@ -921,6 +921,7 @@ Within the considered geometric range, increasing the outer radius generally inc
 		\right]^{1/2}.
 	\end{aligned}
 	\]
+	
 
 	\subsubsection{Compressive Strength}
 	
