@@ -925,34 +925,32 @@ Within the considered geometric range, increasing the outer radius generally inc
 
 	\subsubsection{Compressive Strength}
 	
-	From Eq.~\eqref{Eq18}, the stress $\sigma_1$ of the body-centered cubic cylindrical lattice structure is expressed as
+	From Eq.~\eqref{Eq18}, the nominal stress $\sigma_1$ of the body-centered cubic cylindrical lattice structure can be written as
 	%
 	\begin{multline}
-			\sigma_1
-			=
-			\frac{6d_1^2\delta_1E_s}
-			{\left(R_1^2-r_1^2\right)l_1}
-			+\frac{9d_1^4l_{1,1}^2\delta_1E_s}
-			{16\big(R_1^2-r_1^2\big)\kappa_{1,1}^5}
-			+\frac{9d_1^4l_{1,2}^2\delta_1E_s}
-			{16\big(R_1^2-r_1^2\big)\kappa_{1,2}^5} \\
-			+
-			\frac{27d_1^6l_1^2\delta_1E_s}
-			{1024\big(R_1^2-r_1^2\big)\kappa_{1,1}^7}
-			+
-			\frac{27d_1^6l_1^2\delta_1E_s}
-			{1024\big(R_1^2-r_1^2\big)\kappa_{1,2}^7}.
+		\sigma_1
+		=
+		\frac{6d_1^2\delta_1E_s}
+		{\bigl(R_1^2-r_1^2\bigr)l_1}
+		+\frac{9d_1^4l_{1,1}^2\delta_1E_s}
+		{16\bigl(R_1^2-r_1^2\bigr)\kappa_{1,1}^5}
+		+\frac{9d_1^4l_{1,2}^2\delta_1E_s}
+		{16\bigl(R_1^2-r_1^2\bigr)\kappa_{1,2}^5} \\
+		+\frac{27d_1^6l_1^2\delta_1E_s}
+		{1024\bigl(R_1^2-r_1^2\bigr)\kappa_{1,1}^7}
+		+\frac{27d_1^6l_1^2\delta_1E_s}
+		{1024\bigl(R_1^2-r_1^2\bigr)\kappa_{1,2}^7}.
 		\label{Eq22}
 	\end{multline}
 	
-	As shown in Figure~\ref{fig5}(a), the stress $\sigma_a$ of the axial strut is expressed as
+	As shown in Figure~\ref{fig5}(a), the stress $\sigma_a$ in the axial strut is expressed as
 	%
 	\begin{equation}
 		\sigma_a = \frac{\delta_1E_s}{l_1}.
 		\label{Eq23}
 	\end{equation}
-	
-	The stresses $\sigma_b$ and $\sigma_c$ of the inclined struts are given by
+	%
+	The stresses $\sigma_b$ and $\sigma_c$ in the inclined struts are given by
 	%
 	\begin{equation}
 		\begin{aligned}
@@ -970,29 +968,30 @@ Within the considered geometric range, increasing the outer radius generally inc
 		\label{Eq24}
 	\end{equation}
 	
-	Substituting Eqs.~\eqref{Eq23} and \eqref{Eq24} into Eq.~\eqref{Eq22}, the stress $\sigma_1$ of the body-centered cubic cylindrical lattice structure is derived as
+	Substituting Eqs.~\eqref{Eq23} and \eqref{Eq24} into Eq.~\eqref{Eq22}, the nominal stress $\sigma_1$ of the body-centered cubic cylindrical lattice structure can be rewritten in terms of the strut stresses as
 	%
 	\begin{equation}
-			\sigma_1
+				\sigma_1
 			=
 			\frac{3d_1^2}{R_1^2-r_1^2}
 			\Bigg[
-		2\sigma_a
+			2\sigma_a
 			+
 			\frac{
 				64d_1\kappa_{1,1}^2l_{1,1}^2
 				+3d_1^3l_1^2
 			}{
 				16\kappa_{1,1}^3
-				\left(d_1l_1+16\kappa_{1,1}l_{1,1}\right)
+				\bigl(d_1l_1+16\kappa_{1,1}l_{1,1}\bigr)
 			}
-			+
+			\sigma_b 
+		+
 			\frac{
 				64d_1\kappa_{1,2}^2l_{1,2}^2
 				+3d_1^3l_1^2
 			}{
 				16\kappa_{1,2}^3
-				\left(d_1l_1+16\kappa_{1,2}l_{1,2}\right)
+				\bigl(d_1l_1+16\kappa_{1,2}l_{1,2}\bigr)
 			}
 			\sigma_c
 			\Bigg].
@@ -1013,7 +1012,7 @@ Within the considered geometric range, increasing the outer radius generally inc
 				+3d_1^3l_1^2
 			}{
 				16\kappa_{1,1}^3
-				\left(d_1l_1+16\kappa_{1,1}l_{1,1}\right)
+				\bigl(d_1l_1+16\kappa_{1,1}l_{1,1}\bigr)
 			}
 			\sigma_{b1}^{\mathrm{pk}} 
 			+
@@ -1022,7 +1021,7 @@ Within the considered geometric range, increasing the outer radius generally inc
 				+3d_1^3l_1^2
 			}{
 				16\kappa_{1,2}^3
-				\left(d_1l_1+16\kappa_{1,2}l_{1,2}\right)
+				\bigl(d_1l_1+16\kappa_{1,2}l_{1,2}\bigr)
 			}
 			\sigma_{c1}^{\mathrm{pk}}
 			\Bigg].
@@ -1045,54 +1044,46 @@ Within the considered geometric range, increasing the outer radius generally inc
 	\end{aligned}
 	\]
 	
-	Similar to the body-centered cubic cylindrical lattice structure, as shown in Figure~\ref{fig5}(b), the failure strength $\sigma_2^*$ of the face-centered cubic cylindrical lattice structure can be derived using the mixed failure criterion for the four types of struts as
+	Similarly, the failure strength $\sigma_2^*$ of the face-centered cubic cylindrical lattice structure can be expressed as
 	%
-	\begin{equation}
-		\begin{aligned}
+	\begin{multline}
 			\sigma_2^*
 			=
 			\frac{3d_2^2}{R_2^2-r_2^2}
-			\Bigg\{
-			&2\sigma_{a2}^{\mathrm{pk}}
+			\Bigg[
+			2\sigma_{a2}^{\mathrm{pk}}
 			+
 			\frac{
-				16d_2l_{2,4}^2\left(R_2-r_2\right)^2
+				64d_2l_{2,4}^2\bigl(R_2-r_2\bigr)^2
 				+3d_2^3l_2^2
 			}{
-				2l_{2,4}^3
-				\left[
-				d_2l_2+8l_{2,4}\left(R_2-r_2\right)
-				\right]
+				4l_{2,4}^3
+				\bigl[d_2l_2+16l_{2,4}\bigl(R_2-r_2\bigr)\bigr]
 			}
 			\sigma_{b2}^{\mathrm{pk}} \\
-			&+
+			+
 			\frac{
 				3d_2^2\kappa_{2,1}^2
-				+l_2^2l_{2,1}^2
+				+4l_2^2l_{2,1}^2
 			}{
 				l_{2,1}^2
-				\left(
-				3\kappa_{2,1}d_2+\frac{1}{2}l_2l_{2,1}
-				\right)
+				\bigl(3\kappa_{2,1}d_2+l_2l_{2,1}\bigr)
 			}
-			\sigma_{c2}^{\mathrm{pk}} \\
-			&+
+			\sigma_{c2}^{\mathrm{pk}} 
+			+
 			\frac{
 				3d_2^2\kappa_{2,2}^2
-				+l_2^2l_{2,2}^2
+				+4l_2^2l_{2,2}^2
 			}{
 				l_{2,2}^2
-				\left(
-				3\kappa_{2,2}d_2+\frac{1}{2}l_2l_{2,2}
-				\right)
+				\bigl(3\kappa_{2,2}d_2+l_2l_{2,2}\bigr)
 			}
 			\sigma_{d2}^{\mathrm{pk}}
-			\Bigg\}.
-		\end{aligned}
+			\Bigg].
 		\label{Eq27}
-	\end{equation}
+	\end{multline}
 	%
-	where the plastic buckling stresses $\sigma_{a2}^{\mathrm{pk}}$, $\sigma_{b2}^{\mathrm{pk}}$, $\sigma_{c2}^{\mathrm{pk}}$, and $\sigma_{d2}^{\mathrm{pk}}$ of the four types of struts are expressed as
+	where
 	%
 	\[
 	\begin{aligned}
@@ -1101,15 +1092,16 @@ Within the considered geometric range, increasing the outer radius generally inc
 		\frac{25\pi^2d_2^2}{196l_2^2}E_s, &
 		\sigma_{b2}^{\mathrm{pk}}
 		&=
-		\frac{25\pi^2d_2^2}{49l_{2,4}^2}E_s, \\
+		\frac{25\pi^2d_2^2}{196l_{2,4}^2}E_s, \\
 		\sigma_{c2}^{\mathrm{pk}}
 		&=
-		\frac{\pi^2d_2^2}{4l_{2,1}^2}E_s, &
+		\frac{25\pi^2d_2^2}{196l_{2,1}^2}E_s, &
 		\sigma_{d2}^{\mathrm{pk}}
 		&=
-		\frac{\pi^2d_2^2}{4l_{2,2}^2}E_s .
+		\frac{25\pi^2d_2^2}{196l_{2,2}^2}E_s .
 	\end{aligned}
 	\]
+	
 	
 	As shown in Figure~\ref{fig5}(c), the failure strength $\sigma_3^*$ of the octahedral cylindrical lattice structure can be derived using the mixed failure criterion for the six types of struts as
 	%
