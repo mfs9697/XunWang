@@ -1079,7 +1079,7 @@ Within the considered geometric range, increasing the outer radius generally inc
 				\bigl(3\kappa_{2,2}d_2+l_2l_{2,2}\bigr)
 			}
 			\sigma_{d2}^{\mathrm{pk}}
-			\Bigg].
+			\Bigg],
 		\label{Eq27}
 	\end{multline}
 	%
@@ -1178,7 +1178,7 @@ As shown in Figure~\ref{fig5}(c), the failure strength $\sigma_3^*$ of the octah
 			\bigr)
 		}
 		\sigma_{f3}^{\mathrm{pk}}
-		\Bigg].
+		\Bigg],
 	\end{aligned}
 	\label{Eq28}
 \end{equation}
@@ -1187,7 +1187,7 @@ As shown in Figure~\ref{fig5}(c), the failure strength $\sigma_3^*$ of the octah
 % \sigma_{b3}^{pk} contains \kappa_{71}^2. It has been changed here
 % to l_{3,1}^2 by analogy with the following \sigma_{c3}^{pk} term.
 % Please check this against the original derivation.
-
+%
 where the plastic buckling stresses $\sigma_{a3}^{\mathrm{pk}}$, $\sigma_{b3}^{\mathrm{pk}}$, $\sigma_{c3}^{\mathrm{pk}}$, $\sigma_{d3}^{\mathrm{pk}}$, $\sigma_{e3}^{\mathrm{pk}}$, and $\sigma_{f3}^{\mathrm{pk}}$ of the six types of struts are expressed as
 %
 \[
@@ -1256,7 +1256,7 @@ As shown in Figure~\ref{fig5}(d), the failure strength $\sigma_4^*$ of the tesse
 			32l_{4,1}^3l_{4,2}^3
 		}
 		\sigma_{d4}^{\mathrm{pk}}
-		\Bigg].
+		\Bigg],
 	\end{aligned}
 	\label{Eq29}
 \end{equation}
@@ -1281,66 +1281,66 @@ where the plastic buckling stresses $\sigma_{a4}^{\mathrm{pk}}$, $\sigma_{b4}^{\
 \]
 
 	
-	\section{Finite Element Model of Composite Cylindrical Truss Lattice Structures}
-	
-	To further explore the mechanical properties of composite cylindrical truss lattice structures, verify the theoretical models for stiffness and strength proposed in the previous sections, and compare the predictions with experimental results, finite element analysis was adopted to conduct numerical simulations of several structural configurations. First, geometric models of the cylindrical truss lattice structures were established strictly according to the dimensions of the actual specimens, with the detailed dimensional parameters listed in Table~\ref{tab1}. Subsequently, mesh generation was performed for the finite element models, and the tetrahedral solid element C3D10M was used throughout this study.
-	
-	\begin{figure}[htbp]
+\section{Finite Element Model of Composite Cylindrical Truss Lattice Structures}
+
+To further investigate the mechanical properties of the composite cylindrical truss lattice structures, verify the theoretical models for stiffness and strength proposed in the previous sections, and compare the predictions with experimental results, finite element analysis was carried out for several structural configurations. First, geometric models of the cylindrical truss lattice structures were established strictly according to the dimensions of the actual specimens, with the detailed dimensional parameters listed in Table~\ref{tab1}. The finite element meshes were then generated, and the modified ten-node tetrahedral solid element C3D10M was used throughout the simulations.
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.62\textwidth]{image12}
+	\caption{Mesh convergence analysis of the finite element model.}
+	\label{fig6}
+\end{figure}
+
+Finite element models of four types of low-density cylindrical truss lattice structures were established using Abaqus/Explicit to determine their elastic modulus and strength at different relative densities. Figure~\ref{fig6} presents the mesh convergence analysis of the compressive strength obtained from the finite element simulations. To improve the efficiency of the mesh convergence study, the body-centered cubic cylindrical lattice structure was selected as the representative model, with geometric dimensions of $R_1=\SI{38}{mm}$, $r_1=\SI{22}{mm}$, $l_1=\SI{15}{mm}$, and $d_1=\SI{2}{mm}$. The simulation results show that variations in mesh size have only a slight influence on the final results. Therefore, a mesh size of \SI{1}{mm} was adopted, satisfying the accuracy requirements of the finite element simulations while maintaining computational efficiency.
+
+\begin{figure}[htbp]
+	\centering
+	\begin{subfigure}{0.47\textwidth}
 		\centering
-		\includegraphics[width=0.62\textwidth]{image12}
-		\caption{Mesh convergence analysis of the finite element model.}
-		\label{fig6}
-	\end{figure}
-	
-	Finite element models of four types of low-density cylindrical truss lattice structures were established using the Abaqus/Explicit analysis module to determine their elastic modulus and strength at different relative densities. Figure~\ref{fig6} presents the mesh convergence analysis results for the compressive strength obtained from finite element simulations. To improve the efficiency of the mesh convergence analysis for composite cylindrical truss lattice structures, the body-centered cubic cylindrical lattice structure was selected as the representative model, with geometric dimensions of $R_1=\SI{38}{mm}$, $r_1=\SI{22}{mm}$, $l_1=\SI{15}{mm}$, and $d_1=\SI{2}{mm}$. The simulation results show that variations in mesh size exert only a slight influence on the final analysis results. Accordingly, a mesh size of \SI{1}{mm} was adopted, which satisfies the accuracy requirements of the finite element simulation while maintaining overall computational efficiency.
-	
-	\begin{figure}[htbp]
+		\includegraphics[width=\textwidth]{image13}
+		\caption{}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.47\textwidth}
 		\centering
-		\begin{subfigure}{0.47\textwidth}
-			\centering
-			\includegraphics[width=\textwidth]{image13}
-			\caption{}
-		\end{subfigure}
-		\hfill
-		\begin{subfigure}{0.47\textwidth}
-			\centering
-			\includegraphics[width=\textwidth]{image14}
-			\caption{}
-		\end{subfigure}
-		
-		\vspace{0.5em}
-		
-		\begin{subfigure}{0.47\textwidth}
-			\centering
-			\includegraphics[width=\textwidth]{image15}
-			\caption{}
-		\end{subfigure}
-		\hfill
-		\begin{subfigure}{0.47\textwidth}
-			\centering
-			\includegraphics[width=\textwidth]{image16}
-			\caption{}
-		\end{subfigure}
-		\caption{Boundary conditions and mesh configurations of composite cylindrical truss lattice structures: (a) body-centered; (b) face-centered; (c) octahedral; (d) tesseract.}
-		\label{fig7}
-	\end{figure}
+		\includegraphics[width=\textwidth]{image14}
+		\caption{}
+	\end{subfigure}
 	
-	An elastoplastic model was adopted to characterize the stiffness and strength of the cylindrical truss lattice structures under quasi-static compression, and the Dynamic, Explicit analysis step was employed in the finite element simulation. For the boundary conditions, the lattice specimens were placed between two rigid compression platens, which were defined as discrete rigid bodies in the model. The corresponding degrees of freedom and boundary constraints were assigned to their reference points (RPs). To reproduce uniform compression loading, the lower platen was fully fixed, whereas the upper platen moved downward along the $y$-direction, as illustrated in Figure~\ref{fig7}. General contact was defined between the platens and the lattice structures. Hard normal contact was specified, and the penalty method was used for tangential behavior with a friction coefficient of 0.15. The simulated elastic modulus of the composite cylindrical truss lattice structures was calculated from the slope of the stress--strain curve in the elastic deformation stage.
+	\vspace{0.5em}
 	
-	To investigate the impact resistance of composite cylindrical truss lattice structures, finite element models were established to analyze their deformation and energy absorption characteristics under impact loading. The Abaqus/Explicit dynamic module was used for numerical modeling to compare the impact performance of different composite cylindrical truss lattice structures. The Johnson--Cook (J--C) plasticity model was adopted in the finite element analysis to describe the strain-rate hardening effect of the material under impact loading. Since thermal effects were not considered in the J--C constitutive model for the present dynamic impact simulation, the yield stress of the material under dynamic impact can be simplified as
-	%
-	\begin{equation}
-		\sigma_c =
-		\left(a+b\varepsilon_p^n\right)
-		\left[
-		1+c\ln\left(\frac{\dot{\varepsilon}_p}{\dot{\varepsilon}_0}\right)
-		\right].
-		\label{Eq30}
-	\end{equation}
-	%
-	In Eq.~\eqref{Eq30}, $a$ is the yield strength of the material, while $b$ and $n$ are material hardening parameters. These parameters were determined by fitting the stress--strain curves obtained from tensile tests on standard specimens in accordance with ASTM standards. In addition, $\dot{\varepsilon}_p$ and $\dot{\varepsilon}_0$ denote the dynamic strain rate and reference strain rate, respectively, and $\varepsilon_p$ is the equivalent plastic strain. According to the experimental results reported by Mars et al.~\cite{Ref50}, the strain-rate sensitivity constant $c$ was set to 0.002.
-	
-	The contact properties and mesh generation for the impact simulations were identical to those used in the quasi-static compression simulations. For the interaction settings under impact loading, a mass of \SI{7.73}{kg} was assigned to the reference point of the upper steel plate, and a downward velocity was applied to impose impact loading on the cylindrical truss lattice structures and extract stress and strain data during the finite element simulation. The lower steel plate was constrained in the same manner as in the quasi-static compression tests.
+	\begin{subfigure}{0.47\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{image15}
+		\caption{}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.47\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{image16}
+		\caption{}
+	\end{subfigure}
+	\caption{Boundary conditions and mesh configurations of composite cylindrical truss lattice structures: (a) body-centered; (b) face-centered; (c) octahedral; (d) tesseract.}
+	\label{fig7}
+\end{figure}
+
+An elastoplastic material model was adopted to characterize the stiffness and strength of the cylindrical truss lattice structures under quasi-static compression, and a Dynamic, Explicit analysis step was used in the finite element simulations. For the boundary conditions, the lattice specimens were placed between two rigid compression platens, which were defined as discrete rigid bodies in the model. The corresponding degrees of freedom and boundary constraints were assigned to the reference points (RPs) of the platens. To reproduce uniform compression loading, the lower platen was fully fixed, whereas the upper platen moved downward along the $y$-direction, as illustrated in Figure~\ref{fig7}. General contact was defined between the platens and the lattice structures. Hard normal contact was specified, and the penalty method was used for tangential behavior with a friction coefficient of 0.15. The simulated elastic modulus of the composite cylindrical truss lattice structures was calculated from the slope of the stress--strain curve in the elastic deformation stage.
+
+To investigate the impact resistance of the composite cylindrical truss lattice structures, finite element models were established to analyze their deformation and energy absorption characteristics under impact loading. The Abaqus/Explicit dynamic module was used to compare the impact performance of different composite cylindrical truss lattice structures. The Johnson--Cook (J--C) plasticity model was adopted to describe the strain-rate hardening effect of the material under impact loading. Since thermal effects were not considered in the present dynamic impact simulations, the yield stress of the material under dynamic impact can be simplified as
+%
+\begin{equation}
+	\sigma_c =
+	\left(a+b\varepsilon_p^n\right)
+	\left[
+	1+c\ln\left(\frac{\dot{\varepsilon}_p}{\dot{\varepsilon}_0}\right)
+	\right].
+	\label{Eq30}
+\end{equation}
+%
+In Eq.~\eqref{Eq30}, $a$ is the yield strength of the material, while $b$ and $n$ are material hardening parameters. These parameters were determined by fitting the stress--strain curves obtained from tensile tests on standard specimens in accordance with ASTM standards. In addition, $\dot{\varepsilon}_p$ and $\dot{\varepsilon}_0$ denote the dynamic strain rate and reference strain rate, respectively, and $\varepsilon_p$ is the equivalent plastic strain. According to the experimental results reported by Mars et al.~\cite{Ref50}, the strain-rate sensitivity constant $c$ was set to 0.002.
+
+The contact properties and mesh generation used in the impact simulations were identical to those used in the quasi-static compression simulations. For the impact-loading setup, a mass of \SI{7.73}{kg} was assigned to the reference point of the upper steel plate, and a downward velocity was applied to impose impact loading on the cylindrical truss lattice structures. Stress and strain data were extracted during the finite element simulation. The lower steel plate was constrained in the same manner as in the quasi-static compression tests.
 
 \section{Experimental Methods for Composite Cylindrical Truss Lattice Structures}
 
